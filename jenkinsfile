@@ -1,13 +1,11 @@
 pipeline {
-    agent { label 'windows' } // assuming you have a Windows agent
+    agent any
     stages {
         stage('Build') {
             steps {
-                bat 'echo Build completed'
+                echo 'Build completed'
             }
         }
     }
 }
-
-
 
